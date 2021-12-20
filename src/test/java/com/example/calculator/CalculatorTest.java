@@ -19,4 +19,11 @@ public class CalculatorTest {
         int result = calculator.Add(input);
         assertEquals(0, result);
     }
+
+    @Test
+    public void shouldReturnSameNumberIfSingleNumberIsEntered() {
+        String input = "1";
+        int result = calculator.Add(input);
+        assertEquals(1, result);
+    }
 }
