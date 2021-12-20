@@ -40,4 +40,11 @@ public class CalculatorTest {
         int result = calculator.Add(input);
         assertEquals(10, result);
     }
+
+    @Test
+    public void shouldReturnSumOfAllNumbersSeparatedByAnyDelimiter() {
+        String input = "//;\n1;2\n3;4\n";
+        int result = calculator.Add(input);
+        assertEquals(10, result);
+    }
 }
