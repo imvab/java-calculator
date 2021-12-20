@@ -26,4 +26,11 @@ public class CalculatorTest {
         int result = calculator.Add(input);
         assertEquals(1, result);
     }
+
+    @Test
+    public void shouldReturnSumOfAllNumbersSeparatedByAComma() {
+        String input = "1,2,3";
+        int result = calculator.Add(input);
+        assertEquals(6, result);
+    }
 }

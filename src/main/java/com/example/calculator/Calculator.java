@@ -5,6 +5,13 @@ public class Calculator {
         if (numbers.equals("")) {
             return 0;
         } 
-        return Integer.parseInt(numbers);
+        
+        String[] listOfNumbers = numbers.split(",");
+        int result = 0;
+        for (int i = 0; i < listOfNumbers.length; i++) {
+            int number = Integer.parseInt(listOfNumbers[i]);
+            result += number;
+        }
+        return result;
     }
 }
