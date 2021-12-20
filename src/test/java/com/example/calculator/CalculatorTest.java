@@ -33,4 +33,11 @@ public class CalculatorTest {
         int result = calculator.Add(input);
         assertEquals(6, result);
     }
+
+    @Test
+    public void shouldReturnSumOfAllNumbersSeparatedByACommaAndLines() {
+        String input = "1,2\n3,4\n";
+        int result = calculator.Add(input);
+        assertEquals(10, result);
+    }
 }
